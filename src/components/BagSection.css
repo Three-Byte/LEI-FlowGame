@@ -1,0 +1,51 @@
+.bag-section {
+  margin-top: 13px;
+  margin-bottom: 32px;
+}
+
+.bag-section__header {
+  display: flex;
+  align-items: baseline;
+  gap: 0;
+  margin-bottom: 10px;
+}
+
+.bag-section__title {
+  font-size: 17px;
+  font-weight: 700;
+  color: #ffffff;
+}
+
+.bag-section__count {
+  font-size: 17px;
+  font-weight: 400;
+  color: #ffffff;
+}
+
+.bag-section__content {
+  background-color: #20232b;
+  border-radius: 16px;
+  padding: 16px;
+}
+
+.bag-section__icon-col {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 71px;
+}
+
+.bag-section__icon-box {
+  width: 71px;
+  height: 81px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.bag-section__label {
+  font-size: 12px;
+  font-weight: 700;
+  color: #ffffff;
+  margin-top: 6px;
+}

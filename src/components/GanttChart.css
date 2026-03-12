@@ -1,0 +1,104 @@
+.gantt {
+  margin-top: 8px;
+}
+
+.gantt__legend {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px 16px;
+  margin-bottom: 12px;
+}
+
+.gantt__legend-item {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  font-size: 11px;
+  color: #8a8a8a;
+}
+
+.gantt__legend-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 2px;
+  flex-shrink: 0;
+}
+
+.gantt__rows {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+/* One order block: label + two track rows */
+.gantt__order {
+  display: flex;
+  align-items: flex-start;
+  gap: 8px;
+}
+
+.gantt__order-label {
+  font-size: 10px;
+  color: #666;
+  width: 24px;
+  flex-shrink: 0;
+  text-align: right;
+  padding-top: 4px;
+}
+
+.gantt__tracks {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+}
+
+/* Single track row: optional label + bar */
+.gantt__track-wrap {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.gantt__track-label {
+  font-size: 9px;
+  color: #555;
+  width: 44px;
+  flex-shrink: 0;
+  text-align: right;
+  letter-spacing: 0.2px;
+}
+
+.gantt__track {
+  flex: 1;
+  height: 12px;
+  position: relative;
+  background: #1e1e1e;
+  border-radius: 3px;
+  overflow: hidden;
+}
+
+.gantt__bar {
+  position: absolute;
+  top: 0;
+  height: 100%;
+  border-radius: 2px;
+  opacity: 0.9;
+}
+
+/* Reorg bars get a subtle stripe pattern to signal waste */
+.gantt__bar--reorg {
+  opacity: 0.85;
+  background-image: repeating-linear-gradient(
+    45deg,
+    transparent,
+    transparent 3px,
+    rgba(0, 0, 0, 0.25) 3px,
+    rgba(0, 0, 0, 0.25) 6px
+  );
+}
+
+/* Optimal: no reorg bars visible, assembly bars tinted green */
+.gantt--optimal .gantt__bar {
+  filter: hue-rotate(80deg) saturate(1.4);
+}

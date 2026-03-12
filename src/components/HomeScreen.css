@@ -1,0 +1,21 @@
+.homescreen {
+  width: 375px;
+  min-height: 100vh;
+  background-color: #191b23;
+  font-family: 'DM Sans', sans-serif;
+  display: flex;
+  flex-direction: column;
+}
+
+.homescreen__body {
+  display: flex;
+  flex-direction: column;
+  padding: 0 16px;
+}
+
+.items-container {
+  display: flex;
+  flex-direction: column;
+  gap: 13px;
+  margin-top: 13px;
+}

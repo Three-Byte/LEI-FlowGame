@@ -1,0 +1,43 @@
+.gauge-row {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+  padding: 12px 0 8px;
+}
+
+.gauge-row__item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 6px;
+}
+
+.gauge-row__svg {
+  display: block;
+}
+
+.gauge-track {
+  stroke: #2a2a2a;
+}
+
+.gauge-arc {
+  stroke: #EA661E;
+  transition: stroke-dashoffset 0.4s ease, stroke 0.3s ease;
+}
+
+.gauge-row__value-text {
+  fill: #ffffff;
+  font-family: inherit;
+}
+
+.gauge-row__label {
+  font-size: 11px;
+  color: #8a8a8a;
+  text-align: center;
+  letter-spacing: 0.3px;
+}
+
+/* Optimal state — green arcs */
+.gauge-row--optimal .gauge-arc {
+  stroke: #4caf50;
+}

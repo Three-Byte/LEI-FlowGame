@@ -1,0 +1,98 @@
+.about-screen {
+  width: 375px;
+  min-height: 100vh;
+  background-color: #191b23;
+  font-family: 'DM Sans', sans-serif;
+  display: flex;
+  flex-direction: column;
+}
+
+.about-screen__body {
+  display: flex;
+  flex-direction: column;
+  padding: 0 16px 40px;
+}
+
+/* Overview card — large dark rounded card containing all body content */
+.about-overview-card {
+  background-color: #20232b;
+  border-radius: 16px;
+  padding: 20px 16px;
+  margin-top: 13px;
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+}
+
+.about-overview-card__title {
+  font-size: 22px;
+  font-weight: 700;
+  color: #ffffff;
+  margin: 0 0 16px 0;
+  line-height: 1.2;
+}
+
+/* Body paragraphs */
+.about-body-text {
+  font-size: 14px;
+  font-weight: 400;
+  color: #c8cad4;
+  line-height: 1.65;
+  margin: 0 0 12px 0;
+}
+
+.about-body-text--spaced {
+  margin-top: 6px;
+}
+
+/* Inline lime highlight for key terms */
+.about-highlight {
+  color: #daf376;
+  font-weight: 600;
+}
+
+/* Time-period section label + bullets */
+.about-section {
+  margin-bottom: 14px;
+}
+
+.about-section__label {
+  display: block;
+  font-size: 12px;
+  font-weight: 700;
+  color: #8a8f9e;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  margin-bottom: 8px;
+}
+
+/* Bullet list */
+.about-bullet-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.about-bullet-item {
+  display: flex;
+  flex-direction: row;
+  gap: 8px;
+  align-items: flex-start;
+}
+
+.about-bullet-dot {
+  color: #daf376;
+  font-size: 14px;
+  line-height: 1.65;
+  flex-shrink: 0;
+}
+
+.about-bullet-body {
+  font-size: 14px;
+  font-weight: 400;
+  color: #c8cad4;
+  line-height: 1.65;
+}

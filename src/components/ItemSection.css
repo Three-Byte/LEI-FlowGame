@@ -1,0 +1,110 @@
+.item-section {
+  background-color: #20232b;
+  border-radius: 16px;
+  padding: 12px 8px 16px;
+  cursor: default;
+  transition: outline 0.1s ease, opacity 0.1s ease;
+}
+
+.item-section {
+  user-select: none;
+}
+
+.item-section--drag-over {
+  outline: 2px solid #daf376;
+  outline-offset: 2px;
+  opacity: 0.85;
+}
+
+.item-section__title-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 8px;
+  margin-bottom: 16px;
+}
+
+.item-section__title-text {
+  display: flex;
+  align-items: baseline;
+  gap: 4px;
+}
+
+.item-section__title {
+  font-size: 16px;
+  font-weight: 700;
+  color: #ffffff;
+}
+
+.item-section__count {
+  font-size: 16px;
+  font-weight: 400;
+  color: #ffffff;
+}
+
+.drag-handle {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  padding: 5px 8px;
+  cursor: grab;
+  touch-action: none; /* prevents scroll from stealing the pointer during drag */
+}
+
+.drag-handle__line {
+  display: block;
+  width: 25px;
+  height: 2px;
+  background-color: #686e7f;
+  border-radius: 1px;
+}
+
+.item-section__units {
+  display: flex;
+  flex-direction: row;
+  gap: 16px;
+  padding: 0 8px;
+  flex-wrap: nowrap;
+  overflow-x: auto;
+}
+
+.item-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 72px;
+  flex-shrink: 0;
+}
+
+.item-card__icon-box {
+  width: 54px;
+  height: 54px;
+  background-color: #353940;
+  border-radius: 27px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 8px;
+}
+
+.item-card__info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  width: 100%;
+}
+
+.item-card__name {
+  font-size: 14px;
+  font-weight: 400;
+  color: #ffffff;
+  white-space: nowrap;
+}
+
+.item-card__priority {
+  font-size: 14px;
+  font-weight: 700;
+  color: #ffffff;
+  white-space: nowrap;
+}
